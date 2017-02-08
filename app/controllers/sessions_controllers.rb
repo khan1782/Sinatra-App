@@ -11,6 +11,7 @@ post '/sessions' do
     else
       @errors = ["Invalid username or password"]
       erb :"users/login"
+      #erb :'sessions/new"
     end
 
 end
