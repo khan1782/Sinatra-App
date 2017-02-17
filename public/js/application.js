@@ -1,7 +1,11 @@
 $(document).ready(function() {
-  // This is called after the document has loaded in its entirety
-  // This guarantees that any elements we bind to will exist on the page
-  // when we try to bind to them
 
-  // See: http://docs.jquery.com/Tutorials:Introducing_$(document).ready()
+  var menuItemCount = 0
+$("#new-ingredient-button").on("click", function(event){
+  event.preventDefault();
+    menuItemCount +=1
+  $("#ingredient-inputs").prepend("<label>Ingredient: </label><input name='ingredient[" + menuItemCount.toString() + "[name]]'> <label>Unit: </label><input type='text' name='ingredient[" + menuItemCount.toString() + "[unit_type]]'><br><br>")
+  console.log("HA")
+})
+
 });
