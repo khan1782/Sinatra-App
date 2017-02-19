@@ -1,3 +1,18 @@
+<h1> Welcome to the grocery list generator </h1>
+
+<div>
+  <p>
+    <a href="/sessions/new">login</a>
+  </p>
+  <p>
+    <a href="/users/new">Register</a>
+  </p>
+<form action="/sessions" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button type="submit">log out</button>
+</form>
+</div>
+
 <h2> Meals </h2>
 
 <% @meals.each do |meal| %>

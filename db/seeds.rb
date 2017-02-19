@@ -1,7 +1,7 @@
 
 User.create([
-  { name: "ryan", email: "rklandgren@gmail.com", hash_pass: "1234" },
-  { name: "Kevin", email: "kevin@kevin.com", hash_pass: "1234" }
+  { email: "rklandgren@gmail.com", password: "1234" },
+  { email: "kevin@kevin.com", password: "1234" }
 ])
 
 Meal.create([
